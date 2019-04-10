@@ -1,10 +1,11 @@
-###leetcode 刷题打卡
-[题目来源](https://leetcode-cn.com/problemset/all/)
-###规则
+##leetcode 刷题打卡   
+[题目来源](https://leetcode-cn.com/problemset/all/)   
+
+##规则
 1. 每周日由负责人更新下一周每天的题目
 2. 每天一题 每天晚上12点之前提交代码
 
-## 如何操作
+## 如何操作   
 [github地址](https://github.com/dushuhu-lake/312lab.git)        
 1. 建议浏览器收藏github地址 https://github.com/dushuhu-lake/312lab/tree/master/leetcode	        
 2. 每天查看当周的question.md的当天题目 点击链接即可切换到leetcode答题页面	        
