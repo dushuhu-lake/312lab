@@ -85,7 +85,20 @@ public:
 #### 周四
 [无重复字符的最长子串](https://leetcode-cn.com/problems/longest-substring-without-repeating-characters/)
 ```
-
+//这个方法很好
+int lengthOfLongestSubstring2(string s) {
+    string ss="";
+    int ans=0;
+    // 核心思想是ss在是上进行窗口滑动，永远保持没有重复
+    for(int i=0;i<s.length();i++){
+        int index=ss.find(s[i]); // 找到并返回下标，没找到返回npos标志。
+        if(index!=ss.npos)// npos 代表不可能的最大值
+            ss.assign(ss,index+1,ss.length()-index);// 重新赋值，从找到的那个的下一个位置起到最后
+        ss+=s[i];// 把当前这个位置的值加到最后去
+        ans=ss.length()>ans ? ss.length():ans;
+    }
+    return ans;  
+}
 ```
 #### 周五
 [最长回文子串](https://leetcode-cn.com/problems/longest-palindromic-substring/)
