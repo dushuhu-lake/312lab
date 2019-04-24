@@ -47,7 +47,31 @@ vector<vector<int>> threeSum(vector<int>& nums){
     }
 ```
 ## 周三
-
+```
+ListNode* removeNthFromEnd(ListNode* head, int n) {
+       if(head->next == NULL){
+            head = NULL;
+            return head;
+        }
+        ListNode *pre = head;
+        ListNode *cur = head;
+        while(n != 0){
+            n--;
+            pre = pre->next;
+        }
+        while( pre != NULL && pre->next!= NULL){
+            pre = pre->next;
+            cur = cur->next;
+        }
+        if(cur == head && pre==NULL){ 
+            // 针对[1,2],2 的情况。
+            head = head->next;
+            return head;
+        }
+        cur->next = cur->next->next;
+        return head;
+    }
+```
 
 ## 周四
 
