@@ -4,7 +4,7 @@
 
 
 ## 周二
-···
+```
 @liujinfu
 vector<vector<int>> threeSum(vector<int>& nums){
         vector<vector<int>> res = {};
@@ -45,8 +45,7 @@ vector<vector<int>> threeSum(vector<int>& nums){
         }
         return res;
     }
-···
-
+```
 ## 周三
 
 
